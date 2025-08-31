@@ -3,4 +3,4 @@
 
 testando  e gerenciando repositorios
 
-<a href="https://github.com/giovanabulcao/estudos_html/Modulo 2/desf_10/site.html">Executar o desafio 10</a>
+<a href="https://giovanabulcao.github.io/estudos_html/Modulo 2/desf_10/site.html">Executar o desafio 10</a>
