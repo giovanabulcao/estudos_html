@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Mira no Alvo</h1>
+    <p>
+        Por padrão, sempre que um visitante clique em um
+        hyperlink, o site de destino abre na mesma janela do site
+        que continha esse link. Ou seja, o conteúdo anterior vai
+        deixar de ser exibido para mostrar o novo conteúdo.
+        Esse é um comportamento desejado quando o visitante vai
+        continuar a visitar o nosso site, apenas mudando de um
+        documento para outro. Mas e quando um clique leva o visitante
+        para outro site e provavelmente ele nunca mais voltará ao nosso?
+        Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <b>target</b>,
+        que suporta os seguintes valores:
+        <pre>
+            ‣ _blank vai abrir o link em uma nova janela em branco
+            ‣ _self vai abrir o link na janela ou frame atual (padrão)
+            ‣ _top vai desfazer todos os frames e abrir o destino no navegador completo
+            ‣ _parent similar ao uso do _top em uma referência à janela mãe
+            ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
+        </pre>
+        Como o uso de frames é uma técnica quase em desuso, vamos nos basear apenas nas
+        duas primeiras opções _blank e _self. 
+    </p>
+    <h2>Esse link é seu ou é dos outros?</h2>
+    <p>
+        Existe um recurso bem interessante para links que é indicar qual é a
+        natureza do destino usando o atributo <b>rel</b>. Esse atributo aceita vários
+        valores, entre eles vou citar:
+        <pre>
+            ‣next indica que o link é para a próxima parte do documento atual
+            ‣prev indica que o link é para a parte anterior do documento atual
+            ‣author indica que é um link para o site do autor do artigo atual
+            ‣external indica que é um link para outro site que não faz parte do site atual
+            ‣nofollow indica que é um link para um site não endossado, como um link pago
+        </pre>
+    </p>
+    <h2>E para fazer Downloads? Links para Downloads</h2>
+    <p>
+        Outra coisa que aparece bastante em sites são os links para
+        efetuar download de algum material em PDF, ou de um arquivo
+        ZIP qualquer. A partir da versão HTML5, as âncoras receberam
+        atributos especiais para isso. Basta fazer o link diretamente
+        para o arquivo que se deseja efetuar o download e adicionar o
+        atributo download com o valor configurado para o nome do
+        arquivo a ser baixado e o atributo type para indicar ao
+        navegador que tipo de arquivo está sendo baixado. 
+    </p>
+    <p>
+        Aqui vão alguns media types bem usados no nosso dia-a-dia:
+        <pre>
+            ‣ application/zip
+            ‣ text/html
+            ‣ text/css
+            ‣ text/javascript
+            
+            ‣ video/mp4
+            ‣ video/H264
+            ‣ video/JPEG
+            ‣ audio/aac
+            
+            ‣ audio/mpeg
+            ‣ font/ttf
+            ‣ image/jpeg
+            ‣ image/png
+        </pre>
+    </p>
+    <h1>Links para Downloads</h1>
+    <ul>
+        <li><a href="livro/exemplo.pdf" download="exemplo.pdf" type="=application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/exemplo.zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do GitHub</a></p>
+    <p>Usando <b>target</b> e <b>rel</b> o link não se sobrepoẽ e são abertas mais de uma página. Recomendado quando se quer levar para outro site.</p>
+    <p>Você também pode acessar o<a href="https://youtube.com/cursoemvideo/"> meu canal no YouTube.</a></p>
+    <h2>Usando links internos</h2>
+    <p>Precisamos ter outra página.</p>
+    <p>Esta é a primeira página do site. Acesse minha outra página em <a href="pag002.html" rel="next" target="_self">link</a></p>
+    <p>Vocẽ também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">pagina de noticias</a></p>
+
+</body>
+</html>

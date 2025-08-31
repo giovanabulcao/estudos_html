@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     /* Medidas absolutas
+    cm,mm, in(polegadas), px, pt(ponto), pc 
+    
+    
+    Medidas relativas
+    em(altura m, relativa ao m Maisculo de uma fonte) ex(tamanho da altura x de uma fonte), rem, VW, vh, %
+    16 px geralmente == 1em
+    2em == 32px
+    em é o dobro de px
+    */
+    font-size: 1em;
+}
+h1,h2{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Shorthand font
+font-style-> font-weight-> font-size -> font-family */
+/* weight:peso
+   widht: largura
+   height: altura */
