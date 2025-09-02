@@ -5,18 +5,27 @@
     padding: 0px;
 }
 
-body{
+html, body{
     width: 100%;
-    height: 100%;
+    margin: 0;
+}
+
+
+img{
+    width: 100%;
 }
 
 div{
     position:relative;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 #espaco {
     width: 100%;
+    height: 100vh;
     display: block;
+    margin: 0 auto;
 
 }
 
